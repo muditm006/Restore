@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Refresh</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,900;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href= "styles.css">
+
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<a href="index.html"><img src="images/planche.gif" alt="REFRESH"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-window-close" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="heal.html">HEAL</a></li>
+						<li><a href="pricing.html">PRICING</a></li>
+						<li><a href="feedback.html">FEEDBACK</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+			<div class="text-box">
+				<h1>Hamstring Exercises</h1>
+				<a href="heal.html" class="home-btn">Back to Healing Page</a
+			</div>
+		</section>
+
+		<!-- Content of home page -->
+		<section class="home-content">
+			<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Raleway", sans-serif;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Hamstring Bridge')">Hamstring Bridge</button>
+  <button class="tablinks" onclick="openCity(event, 'Prone Knee Bend')">Prone Knee Bend</button>
+  <button class="tablinks" onclick="openCity(event, 'Hurdler Stretch')">Hurdler Stretch</button>
+    <button class="tablinks" onclick="openCity(event, 'Hamstring Wall Stretch')">Hamstring Wall Stretch</button>
+</div>
+
+<div id="Hamstring Bridge" class="tabcontent">
+  <h3>Hamstring Bridge</h3>
+    <img src="images/HamstringBridge.png"width="50%" height="50%">
+  <p>Description: Get set-up flat on your back with your feet supported on an elevated surface with the knees bent at approximately 90 degrees. While maintaining a flat low back, push into the elevated surface to bridge up and lift your hips off the ground. Hold for 45 seconds.</p>
+</div>
+
+<div id="Prone Knee Bend" class="tabcontent">
+  <h3>Prone Knee Bend</h3>
+    <img src="images/ProneKneeBend.png" width="50%" height="50%">
+  <p>Lie flat and relaxed on your front. In a controlled and smooth manner bend your knee and bring your foot towards your butt. When you feel either a stretch tension or discomfort in your leg or back, lower your foot to the starting position. Continue doing this at your own pace for 45 seconds per leg.</p>
+</div>
+
+<div id="Hurdler Stretch" class="tabcontent">
+  <h3>Hurdler Stretch</h3>
+    <img src="images/HurdlerStretch.png" width="50%" height="50%">
+  <p>Sit upright on the floor with both legs straight. Flex one knee and slide the heel towards you until it touches the inner side of the opposite thigh. Bend at the hip and lower your extended upper torso toward the thigh of your straight leg. Hold the stretch for 30 seconds and relax.</p>
+</div>
+
+<div id="Hamstring Wall Stretch" class="tabcontent">
+  <h3>Hamstring Wall Stretch</h3>
+    <img src="images/HamstringWallStretch.png">
+  <p>Lie on your back with your buttocks close to a doorway, and extend your legs straight out in front of you along the floor. Raise one leg and rest it against the wall next to the door frame. Your other leg should extend through the doorway. You should feel a stretch in the back of your thigh. Hold this position for 20 seconds seconds. Repeat 3 times and then switch legs and do the exercise again.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+        </section>
+
+		<!-- Join -->
+		<section class="join">
+			<h1>Sign up today for a lifetime of mobility!</h1>
+			<a href="pricing.html" class="home-btn">SEE PRICING</a>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
+

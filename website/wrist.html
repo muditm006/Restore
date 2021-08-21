@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Refresh</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,900;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href= "styles.css">
+
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<a href="index.html"><img src="images/planche.gif" alt="REFRESH"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-window-close" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="heal.html">HEAL</a></li>
+						<li><a href="pricing.html">PRICING</a></li>
+						<li><a href="feedback.html">FEEDBACK</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+			<div class="text-box">
+				<h1>Wrist Exercises</h1>
+				<a href="heal.html" class="home-btn">Back to Healing Page</a
+			</div>
+		</section>
+
+		<!-- Content of home page -->
+		<section class="home-content">
+			<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Raleway", sans-serif;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Finger Stretches')">Finger Stretches</button>
+  <button class="tablinks" onclick="openCity(event, 'Finger Bends')">Finger Bends</button>
+  <button class="tablinks" onclick="openCity(event, 'Prayer Stretch')">Prayer Stretch</button>
+  <button class="tablinks" onclick="openCity(event, 'Loosen-up Stretch')">Loosen-up Stretch</button>
+</div>
+
+<div id="Finger Stretches" class="tabcontent">
+  <h3>Finger Stretches</h3>
+  <img src="images/FingerStretches.jpg">
+  <p>With your hand out in front, gently pull back each finger one by one. Swap and stretch the fingers on the other hand. To stretch the palm of your hand, use one hand to pull back on all the fingers of your other hand at once. Swap hands. Make a fist with both hands and open slowly to stretch the fingers and thumbs as far as possible. Complete this process for a duration of a minute per hand.</p></div>
+
+<div id="Finger Bends" class="tabcontent">
+  <h3>Finger Bends</h3>
+  <img src="images/FingerBends.jpg">
+  <p>Hold your hands out front with a vertical palm and thumbs pointing up. Next, bend your right thumb toward your palm and hold for a couple of seconds before straightening your thumb back up. Bend your index finger toward your palm (while trying to keep your other fingers straight) and hold for a couple of seconds. Repeat with each finger and thumb on the other hand. Complete this process for a duration of a minute per hand.</p></div>
+
+<div id="Prayer Stretch" class="tabcontent">
+  <h3>Prayer Stretch</h3>
+  <img src="images/PrayerStretch.jpg">
+  <p>Stand with your elbows bent and palms together, fingertips pointing up at a level that’s just below your chin.Lower your hands toward your waist, keeping your hands pressed together and close to your stomach.When you feel a moderate stretch in the underside of your forearms, hold the pose for 30 seconds. Repeat 3 times in total.</p></div>
+
+<div id="Loosen-up Stretch" class="tabcontent">
+  <h3>Loosen-up Stretch</h3>
+  <img src="images/LoosenupStretch.gif">
+  <p>Sit comfortably and bend your arm at the elbow at a right angle. Make a fist, and then slowly open it, spreading and stretching your fingers apart. Complete this stretch for a duration of 30 seconds. Repeat with your other hand.</p></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+
+        </section>
+
+		<!-- Join -->
+		<section class="join">
+			<h1>Sign up today for a lifetime of mobility!</h1>
+			<a href="pricing.html" class="home-btn">SEE PRICING</a>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
+

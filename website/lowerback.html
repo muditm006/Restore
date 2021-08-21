@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Refresh</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,900;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href= "styles.css">
+
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<a href="index.html"><img src="images/planche.gif" alt="REFRESH"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-window-close" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="heal.html">HEAL</a></li>
+						<li><a href="pricing.html">PRICING</a></li>
+						<li><a href="feedback.html">FEEDBACK</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+			<div class="text-box">
+				<h1>Lower Back Exercises</h1>
+				<a href="heal.html" class="home-btn">Back to Healing Page</a
+			</div>
+		</section>
+
+		<!-- Content of home page -->
+		<section class="home-content">
+			<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Raleway", sans-serif;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Knees to Chest Stretch')">Knees to Chest Stretch</button>
+  <button class="tablinks" onclick="openCity(event, 'Childs Pose')">Childs Pose</button>
+  <button class="tablinks" onclick="openCity(event, 'Sphinx Stretch')">Sphinx Stretch</button>
+  <button class="tablinks" onclick="openCity(event, 'Seated Spinal Twist')">Seated Spinal Twist</button>
+  <button class="tablinks" onclick="openCity(event, 'Supine Stretch')">Supine Stretch</button>
+</div>
+
+<div id="Knees to Chest Stretch" class="tabcontent">
+  <h3>Knees to Chest Stretch</h3>
+  <img src="images/KneestoChestStretch.png" width="50%" height="50%">
+  <p>Slowly bring your knees to your chest and hold for 30 seconds while inhaling and exhaling. Repeat for a total of three times.</p></div>
+
+<div id="Childs Pose" class="tabcontent">
+  <h3>Childs Pose</h3>
+  <img src="images/ChildsPose.png" width="50%" height="50%">
+  <p>Begin in a tabletop position on your hands and knees, with your hands directly under your shoulders and knees under your hips. Extend your arms out in front of you, placing your palms flat on the floor. Slowly sit your hips back toward your heels, dropping your head and chest downward as your arms extend further and reach for the wall in front of you. If this stretch is too much, place a pillow under your belly to prop yourself up a bit and lessen the stretch of the low-back muscles. Hold this pose for 30 seconds. Repeat for a total of three times</p></div>
+
+<div id="Sphinx Stretch" class="tabcontent">
+  <h3>Sphinx Stretch</h3>
+  <img src="images/SphinxStretch.png"width="50%" height="50%">
+  <p>Lie on your stomach with your elbows underneath your shoulders and your hands extended in front, palms facing down. Gently engage your lower back, buttocks, and thighs as you lift your head and chest. Stay strong in your lower back and abdominals, breathing deeply. Press your pelvis into the floor. Hold this pose for 45 seconds.</p></div>
+
+<div id="Seated Spinal Twist" class="tabcontent">
+  <h3>Seated Spinal Twist</h3>
+  <img src="images/SeatedSpinalTwist.png"width="50%" height="50%">
+  <p>Sit on the floor with both legs extended out in front. Bend your left knee and place your foot to the outside of your right thigh. Place your right arm on the outside of your left thigh. Place your left hand behind you for support. Starting at the base of your spine, twist to the left side. Hold this pose for up to 1 minute. Repeat on the other side.</p></div>
+
+<div id="Supine Stretch" class="tabcontent">
+  <h3>Supine Stretch</h3>
+  <img src="images/SupineStretch.png"width="50%" height="50%">
+  <p>Sit on the floor with both legs extended out in front. Bend your left knee and place your foot to the outside of your right thigh. Place your right arm on the outside of your left thigh. Place your left hand behind you for support. Starting at the base of your spine, twist to the left side. Hold this pose for up to 1 minute. Repeat on the other side.</p></div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+
+        </section>
+
+		<!-- Join -->
+		<section class="join">
+			<h1>Sign up today for a lifetime of mobility!</h1>
+			<a href="pricing.html" class="home-btn">SEE PRICING</a>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
+

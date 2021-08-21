@@ -4,7 +4,7 @@
 
 This was submitted to the BusiHacks2021 Hackathon.
 
-## The Refresh Webpage is meant to help you recover from injuries quickly and effectively, using customizable exercise routines and a follow-along workout clock.
+### The Refresh Webpage is meant to help you recover from injuries quickly and effectively, using customizable exercise routines and a follow-along workout clock.
 
 ```html
 <p id="CSS">In this project we coded a website using HTML.</p>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Refresh</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,900;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href= "styles.css">
+
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<a href="index.html"><img src="images/planche.gif" alt="REFRESH"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-window-close" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="heal.html">HEAL</a></li>
+						<li><a href="pricing.html">PRICING</a></li>
+						<li><a href="feedback.html">FEEDBACK</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+			<div class="text-box">
+				<h1>Elbow Exercises</h1>
+				<a href="heal.html" class="home-btn">Back to Healing Page</a
+			</div>
+		</section>
+
+		<!-- Content of home page -->
+		<section class="home-content">
+			<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Raleway", sans-serif;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Wrist Extension')">Wrist Extension</button>
+  <button class="tablinks" onclick="openCity(event, 'Wrist Flexion')">Wrist Flexion</button>
+  <button class="tablinks" onclick="openCity(event, 'Ball Squeeze')">Ball Squeeze</button>
+  <button class="tablinks" onclick="openCity(event, 'Finger Stretch')">Finger Stretch</button>
+</div>
+
+<div id="Wrist Extension" class="tabcontent">
+  <h3>Wrist Extension</h3>
+  <img src="images/WristExtension.jpg">
+  <p>Hold your arm straight in front of you. Hold your hand up as if signaling someone to stop. Using your other hand, gently pull back on your outstretched fingers, towards your body. Hold the position for about 15 seconds, then release. Repeat 5 times with a five second pause in between. Remember that the trick is to be gentle. Don’t pull back hard on your fingers and no sudden movements.</p>
+</div>
+
+<div id="Wrist Flexion" class="tabcontent">
+  <h3>Wrist Flexion</h3>
+  <img src="images/WristFlexion.jpg">
+  <p>This exercise uses the opposite hand movement of a wrist extension. Hold your arm straight out in front of you, but bend your hand down at the wrist, fingers toward the floor and your palm facing your body. Using your other hand again, gently push against your fingers towards your body. Hold this position for about 15 seconds and then release. Repeat 3 times with a 5 second pause in between.</p>
+</div>
+
+<div id="Ball Squeeze" class="tabcontent">
+  <h3>Ball Squeeze</h3>
+  <img src="images/BallSqueeze.jpg">
+  <p>This exercise was designed with a ball, like a tennis ball, but you can also use a rolled-up sock or even a stress ball for the same effect. Hold the ball in your hand and squeeze tightly, but not to the point of pain. Hold the position for up to 10 seconds and then release. Repeat 3 times with a 5 second pause in between.</p>
+</div>
+
+<div id="Finger Stretch" class="tabcontent">
+  <h3>Finger Stretch</h3>
+  <img src="images/FingerStretch.jpg">
+  <p>Place the center of an exercise band under your foot, which you place in front of you so you’re standing with one foot in front of the other. Hold the handles securely in your hand with your arm at your side. Gently pull the band upward, bending at the elbow only, keep your upper arm close to your body. Pull the handle up to your shoulder and hold in place for a few seconds. Gently lower your arm. Repeat 10 times, rest a minute, and then do one more set.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+
+        </section>
+
+		<!-- Join -->
+		<section class="join">
+			<h1>Sign up today for a lifetime of mobility!</h1>
+			<a href="pricing.html" class="home-btn">SEE PRICING</a>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
+

@@ -1,6 +1,6 @@
 # "Refresh"
 ## BusiHacks2021
-"Resore" was created by Jennifer Chiou, Sarah Dufays, Mudit Marwaha, Kayla Pena in August of 2021. 
+"Restore" was created by Jennifer Chiou, Sarah Dufays, Mudit Marwaha, Kayla Pena in August of 2021. 
 
 This was submitted to the BusiHacks2021 Hackathon.
 

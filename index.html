@@ -8,8 +8,8 @@
 <body>
 	<p id="countdown"></p>
 	<script src="script.js"></script>
-	<input type="number" min= "0" id= "min" placeholder= "Minutes"/>
-	<input type="number" min= "0" id= "sec" placeholder= "Seconds"/>
+	<input type="number" min= "0" max= "60" onkeyup= "if(this.value >60) this.value=null;"id= "min" placeholder= "Minutes"/>
+	<input type="number" min= "0" max="60" onkeyup= "if(this.value >60) this.value=null;" id= "sec" placeholder= "Seconds"/>
 	<button onclick="submit()" id= "submit"> Submit</button>
 </body>
 </html>

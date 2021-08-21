@@ -22,5 +22,4 @@ var javascript= alert("The backend of the website was in Javascript!")
   }
 ```
 
-
-              [Click here to view our project video, containing a demonstration of our product](https://youtu.be/-q02gbphkt4)
+[Click here to view our project video, containing a demonstration of our product](https://youtu.be/-q02gbphkt4)

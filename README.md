@@ -4,6 +4,8 @@
 
 This was submitted to the BusiHacks2021 Hackathon.
 
+## The Refresh Webpage is meant to help you recover from injuries quickly and effectively, using customizable exercise routines and a follow-along workout clock.
+
 ```html
 <p id="CSS">In this project we coded a website using HTML.</p>
 ```
@@ -20,6 +22,5 @@ var javascript= alert("The backend of the website was in Javascript!")
   }
 ```
 
-## Enjoy!
 
 [Click here to view our project video, containing a demonstration of our product](https://youtu.be/-q02gbphkt4)

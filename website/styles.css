@@ -224,6 +224,13 @@ p {
     padding: 15px 0px 25px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 /*--------------------------PRICING PAGE-----------------------------*/
 .price-header {
     height: 50vh;
@@ -279,7 +286,7 @@ p {
     opacity: 0;
 }
 .layer:hover ul li {
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     font-family: Didot, serif;
     padding: 10px 30px 10px 10px;
@@ -314,176 +321,4 @@ p {
 .feedback {
     text-align: center;
     background: linear-gradient(#4C2F14, #F9BB80);
-}
-
-/*------------------old-----------------*/
-
-/* Styles banner at the top of the site */
-#banner_container {
-    background: radial-gradient(#90dfa1, #bbf2c2);
-    height: 25vh;
-    width: 99vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#banner_text {
-    height: 120px;
-    width: 1000px;
-    background:url(images/banner.jpg);
-    background-size: 1000px 120px;
-    border: dotted;
-    font-size: 100px;
-    text-align: center;
-}
-
-/* Style tab links (the buttons to the tabs) */
-.home_tablink {
-  background:url(images/planche.gif);
-  color: black;
-  float: left;
-  cursor: pointer;
-  padding: 14px 10px;
-  font-size: 25px;
-  font-family: "Raleway", sans-serif;
-  width: 25%;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 1px;
-}
-
-.heal_tablink {
-  background:url(images/heal.gif);
-  color: black;
-  float: left;
-  cursor: pointer;
-  padding: 14px 10px;
-  font-size: 25px;
-  font-family: "Raleway", sans-serif;
-  width: 25%;
-  -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 1px;
-}
-
-
-.tabcontent {
-  display: none;
-  padding: 100px 20px;
-  overflow: hidden;
-}
-
-/* Styles the backgrounds of the tabs */
-#Home {background: linear-gradient(#ffd1fe, #fdddff);}
-#Heal {background: linear-gradient(#fff5b3, #feffd6);}
-#Pricing {background: linear-gradient(#dfb2ff, #e7d4fe);}
-#Feedback {background: linear-gradient(#dfb2ff, #e7d4fe);}
-
-/* Styles Homepage headers */
-.container {
-  background-color: transparent;
-  height: 15vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
-}
-
-#about_text {
-    text-align: center;
-    height: 100px;
-    width: 325px;
-    background:url(images/chop_kale.gif);
-    background-size: 325px 100px;
-    font-size: 90px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color:transparent;
-    -webkit-background-clip:text;
-}
-
-#our_mission {
-    text-align: center;
-	background:url(images/basket_hanging.gif);
-    background-size: 500px 150px;
-    font-size: 90px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-/* Styles the quote on the Home page */
-.quote_container {
-  background-color: transparent;
-  height: 350px;
-  width: 1500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0px 40px 80px;
-}
-
-.quote {
-	text-align: center;
-	margin: 0px 300px 0px 20px;
-	background:url(images/sakura.gif);
-    background-size: 1000px 150px;
-    font-size: 30px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.image {
-   height: 400px;
-   width 400px;
-   display: block;
-   margin-left: 125px;
-   margin-right: auto;
-   border-radius: 150px;
-   border-style: dotted;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.text {
-    margin: 0px 200px 0px 200px;
-    font-size: 20px;
-}
-
-
-/* Styles the map */
-#map {
-	height: 700px;
-	width: 100%;
-    border-radius: 35px;
-    border-style: double;
-}
-
-/* Styles the Recipe pictures and text */
-.recipe_container {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 490px;
-}
-
-.recipe_visual {
-    height: 300px;
-    width 300px;
-    border-radius: 35px;
-    border-style: dotted;
-}
-
-.caption {
-    display: block;
-    font-size: 30px;
-    text-align: center;
 }

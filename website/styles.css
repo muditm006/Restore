@@ -1,0 +1,439 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Styles large picture at top of site */
+.header {
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+}
+
+/*--------------------------NAVIGATION BAR-----------------------------*/
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles logo */
+nav img{
+    width: 150px;
+}
+
+/* Styles tablinks */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* Generates underline when hovering over tablinks */
+.nav-links ul li:after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #4F3ADB;
+    display: block;
+    margin: auto;
+    transition: 1s;
+}
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+/*--------------------------HOME PAGE-----------------------------*/
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 80px;
+    font-family: 'Permanent Marker', cursive;
+}
+.text-box p {
+    margin: 0px 0px 40px;
+    font-size: 14px;
+    color: #fff
+}
+
+/* Styles button on homepage */
+.home-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.home-btn:hover {
+    border: 1px solid #4F3ADB;
+    background: #4F3ADB;
+    transition: 1s;
+}
+
+/* Hides menu icons for large screens */
+nav .fa {
+    display: none;
+}
+
+/* Styles site for smaller devices like phones */
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 30px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    /* Makes tablinks into a menu on the side */
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #4F3ADB;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* Content of home tab ---------------------- */
+.home-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+p {
+    color: #100A39;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* Join part of home tab ------------------ */
+.join {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/join.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px;
+}
+.join h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+/* Style for smaller devices */
+@media(max-width: 700px) {
+    .join h1 {
+        font-size: 20px;
+    }
+}
+
+/*--------------------------HEAL PAGE-----------------------------*/
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/heal-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    opacity: 0.8;
+}
+.sub-header h1 {
+    margin-top: 200px;
+}
+
+/* Styles content of heal page */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.heal {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.heal-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.heal-col {
+    width: 100%;
+}
+.heal-col h1 {
+    padding-top: 0;
+}
+.heal-col p {
+    padding: 15px 0px 25px;
+}
+
+/*--------------------------PRICING PAGE-----------------------------*/
+.price-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/price-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    opacity: 0.8;
+}
+.price-header h1 {
+    margin-top: 200px;
+}
+
+/*--------------------------FEEDBACK PAGE-----------------------------*/
+.feedback-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/feedback-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    min-height: 100vh;
+    min-width: 100%;
+    position: relative;
+    opacity: 0.8;
+}
+.feedback-header h1 {
+    margin-top: 200px;
+}
+
+/* Styles content */
+.feedback {
+    text-align: center;
+    background: linear-gradient(#4C2F14, #F9BB80);
+}
+
+/*------------------old-----------------*/
+
+/* Styles banner at the top of the site */
+#banner_container {
+    background: radial-gradient(#90dfa1, #bbf2c2);
+    height: 25vh;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner_text {
+    height: 120px;
+    width: 1000px;
+    background:url(images/banner.jpg);
+    background-size: 1000px 120px;
+    border: dotted;
+    font-size: 100px;
+    text-align: center;
+}
+
+/* Style tab links (the buttons to the tabs) */
+.home_tablink {
+  background:url(images/planche.gif);
+  color: black;
+  float: left;
+  cursor: pointer;
+  padding: 14px 10px;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  width: 25%;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+}
+
+.heal_tablink {
+  background:url(images/heal.gif);
+  color: black;
+  float: left;
+  cursor: pointer;
+  padding: 14px 10px;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  width: 25%;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+/* Styles the backgrounds of the tabs */
+#Home {background: linear-gradient(#ffd1fe, #fdddff);}
+#Heal {background: linear-gradient(#fff5b3, #feffd6);}
+#Pricing {background: linear-gradient(#dfb2ff, #e7d4fe);}
+#Feedback {background: linear-gradient(#dfb2ff, #e7d4fe);}
+
+/* Styles Homepage headers */
+.container {
+  background-color: transparent;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+#about_text {
+    text-align: center;
+    height: 100px;
+    width: 325px;
+    background:url(images/chop_kale.gif);
+    background-size: 325px 100px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+#our_mission {
+    text-align: center;
+	background:url(images/basket_hanging.gif);
+    background-size: 500px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Styles the quote on the Home page */
+.quote_container {
+  background-color: transparent;
+  height: 350px;
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px 40px 80px;
+}
+
+.quote {
+	text-align: center;
+	margin: 0px 300px 0px 20px;
+	background:url(images/sakura.gif);
+    background-size: 1000px 150px;
+    font-size: 30px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.image {
+   height: 400px;
+   width 400px;
+   display: block;
+   margin-left: 125px;
+   margin-right: auto;
+   border-radius: 150px;
+   border-style: dotted;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.text {
+    margin: 0px 200px 0px 200px;
+    font-size: 20px;
+}
+
+
+/* Styles the map */
+#map {
+	height: 700px;
+	width: 100%;
+    border-radius: 35px;
+    border-style: double;
+}
+
+/* Styles the Recipe pictures and text */
+.recipe_container {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 490px;
+}
+
+.recipe_visual {
+    height: 300px;
+    width 300px;
+    border-radius: 35px;
+    border-style: dotted;
+}
+
+.caption {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+}

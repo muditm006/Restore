@@ -1,7 +1,7 @@
 const coundownEl= document.querySelector("#countdown")
 var time=0;
 var a=0;
-var audio= new Audio('countdown.mp3');
+var audio= new Audio('images/countdown.mp3');
 var timers= [];
 var total_time=0;
 const timer = ms => new Promise(res => setTimeout(res, ms))

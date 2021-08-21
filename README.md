@@ -1,10 +1,10 @@
 # "Refresh"
 ## BusiHacks2021
-"Refresh" was created by Jennifer Chiou, Sarah Dufays, Mudit Marwaha, Kayla Pena in August of 2021. 
+"Resore" was created by Jennifer Chiou, Sarah Dufays, Mudit Marwaha, Kayla Pena in August of 2021. 
 
 This was submitted to the BusiHacks2021 Hackathon.
 
-### The Refresh Webpage is meant to help you recover from injuries quickly and effectively, using customizable exercise routines and a follow-along workout clock.
+### The Restore Webpage is meant to help you recover from injuries quickly and effectively, using customizable exercise routines and a follow-along workout clock.
 
 ```html
 <p id="CSS">In this project we coded a website using HTML.</p>

@@ -1,4 +1,4 @@
-// Shows/hides menu for mobile users (DOESN'T WORK)
+// Shows/hides nav-bar menu for mobile users
 var navLinks = document.getElementById("navLinks");
 
 function showMenu() {

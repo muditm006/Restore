@@ -103,6 +103,35 @@ nav .fa {
     display: none;
 }
 
+.heal-txt-box {
+    width: 90%;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Styles athlete plan demo buttons */
+.heal-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #4F3ADB;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.heal-btn:hover {
+    border: 1px solid #4F3ADB;
+    background: #4F3ADB;
+    transition: 1s;
+    color: #fff;
+}
+
+
 /* Styles site for smaller devices like phones */
 @media(max-width: 700px) {
     .text-box h1 {

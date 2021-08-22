@@ -13,7 +13,8 @@
    </head>
    <body>
       <section class="sub-header">
-         <nav>
+          <!-- Navigation bar and header text -->
+          <nav>
             <a href="index.html"><img src="images/restore.png" alt="RESTORE"></a>
             <div class="nav-links" id="navLinks">
                <i class="fa fa-window-close" onclick="hideMenu()"></i>
@@ -34,6 +35,7 @@
          <h1>Heal your body with our customized exercise circuits! Hover over the picture of the man to select your injury.</h1>
 	</section>
 
+<!------------------- INTERACTIVE BODY -------------------------->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>ImageMapster Beatles Demo</title>
@@ -64,11 +66,12 @@
 
 </head>
 
+
+<!-- Creates circles when hovering over body -->
 <center>
 <img id="beatles" src="http://www.shapesense.com/images/blank-muscle-anatomy.jpg"
-     usemap="#mmmmap" ></center>
+     usemap="#mmmmap"></center>
 <map name="mmmmap">
-
     <area data-name="Ankle,all" href="ankle.html" coords="182,474,31" shape="circle">
     <area data-name="Ankle,all" href="ankle.html" coords="107,474,32" shape="circle">
     <area data-name="Ankle,all" href="ankle.html" coords="420,474,31" shape="circle">
@@ -88,9 +91,6 @@
     <area data-name="Shoulder,all" href="shoulder.html" coords="414,104,32" shape="circle">
     <area data-name="Hamstring,all" href="hamstring.html" coords="424,314,27" shape="circle">
     <area data-name="Hamstring,all" href="hamstring.html" coords="487,314,26" shape="circle">
-
-
-
 </map>
 
 <div id="beatles-caption" style="clear:both;border: 1px solid black; width: 400px; padding: 6px; display:none;">
@@ -98,6 +98,7 @@
      <div id="beatles-caption-text"></div>
 </div>
 
+      <!------------ JAVASCRIPT FOR BODY PART DESCRIPTIONS ------------->
     <script type="text/javascript">//<![CDATA[
 
 
@@ -203,12 +204,14 @@
     window.name = "result"
   </script>
 
+   <!--------------- TEST OUR ATHLETES PLAN BUTTONS --------------->
    <section class="heal">
 	   <h1>Test out our ATHLETES plan!</h1>
 	   <a href="" class="heal-btn">GET YOUR NEEDLE</a>
 	   <a href="" class="heal-btn">GET YOUR MIDDLE/STRADDLE SPLIT</a>
    </section>
 
+    <!-- Join Footer -->
 	<section class="join">
 		<h1>Sign up today for a lifetime of mobility!</h1>
 		<a href="pricing.html" class="home-btn">SEE PRICING</a>

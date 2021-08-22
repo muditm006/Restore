@@ -5,7 +5,8 @@ var audio= new Audio('images/countdown.mp3');
 var timers= [];
 var total_time=0;
 const timer = ms => new Promise(res => setTimeout(res, ms))
-// Shows/hides menu for mobile users (DOESN'T WORK)
+
+// Shows/hides menu for mobile users
 var navLinks = document.getElementById("navLinks");
 
 function showMenu() {

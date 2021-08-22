@@ -8,7 +8,11 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100;0,900;1,900&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href ="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"rel = "stylesheet">
+		<script src ="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src ="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		<link rel="stylesheet" href= "styles.css">
 
 	</head>
@@ -30,24 +34,65 @@
 
 			<div class="text-box">
 				<h1>Wrist Exercises</h1>
-				<a href="heal.html" class="home-btn">Back to Healing Page</a
+				<a href="heal.html" class="home-btn">Back to Healing Page</a>
 			</div>
 		</section>
+		<center>
+		<div class="height"></div><br>
+    <div id = "imageListId">
+        <div data-seconds= "20" id="imageNo1" class = "listitemClass">
+            <img src="images/FingerStretches.jpg" alt="">
+            <b><body>#1: Finger Stretches</body></b>
+        </div>
 
+        <div data-seconds= "20" id="imageNo2" class = "listitemClass">
+            <img src="images/FingerBends.jpg" alt="">
+            <body>#2: Finger Bends</body>
+        </div>
+
+        <div data-seconds= "50" id="imageNo3" class = "listitemClass">
+            <img src="images/PrayerStretch.jpg" alt="">
+            <body>#3: Prayer Stretch</body>
+        </div>
+
+        <div data-seconds= "60" id="imageNo4" class =  "listitemClass">
+            <img src="images/LoosenupStretch.gif" alt="">
+            <body>#4: Loosen-up Stretch</body> 
+        </div>
+    </div>
+	
+	</br></br></br></br>
+    <div id="outputDiv">
+        <b>Current Image Order:</b>
+        <input id="outputvalues" style= "color: black;font-weight: bold; width: 300px; heigth; 150px;" type="text" placeholder="Drag Blocks to Order Workout" />
+		<b>
+		<button class="btn btn-secondary" onclick="submit_workout()">Submit Workout Order</button>
+		<a style= "text-decoration: none;" href="timer.html" target="_blank" rel="noopener"><button class="btn btn-info">Go to workout</button></a>
+		</b>
+    </div>
+	<script type="text/javascript" src="dropdown.js"></script>
+	</center>
 		<!-- Content of home page -->
 		<section class="home-content">
 			<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: "Raleway", sans-serif;}
+body
+{
+	font-family: "Raleway", sans-serif;
+	background-color: white;
+}
 
-.tab {
+.tab 
+{
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  width: 100%;
 }
 
-.tab button {
+.tab button 
+{
   background-color: inherit;
   float: left;
   border: none;
@@ -58,24 +103,58 @@ body {font-family: "Raleway", sans-serif;}
   transition: 0.3s;
   font-size: 17px;
 }
-.tab button:hover {
+.tab button:hover 
+{
   background-color: #ddd;
 }
-.tab button.active {
+
+.tab button.active 
+{
   background-color: #ccc;
 }
-.tabcontent {
+.tabcontent 
+{
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  background-color:#f1f1f1;
+  
+ } 
+img
+{
+	width: 250px;
+	heigth: 150px;
+	border-radius: 15px;
+	margin-top: 10px;
 }
+
+.listitemClass
+{
+	font-size:20px;
+	font-weight: bold;
+	border: black;
+	border-width:3px;
+	border-style:solid;
+}
+
+.tablinks
+{
+	width: 25%;
+}
+
+p
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
 </style>
 </head>
 
-<body>
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Finger Stretches')">Finger Stretches</button>
+<body>
+  <button class="tablinks" id= "hello"onclick="openCity(event, 'Finger Stretches')">Finger Stretches</button>
   <button class="tablinks" onclick="openCity(event, 'Finger Bends')">Finger Bends</button>
   <button class="tablinks" onclick="openCity(event, 'Prayer Stretch')">Prayer Stretch</button>
   <button class="tablinks" onclick="openCity(event, 'Loosen-up Stretch')">Loosen-up Stretch</button>
@@ -115,6 +194,7 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+document.querySelector("#hello").click();
 </script>
 </body>
 

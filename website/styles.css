@@ -5,18 +5,7 @@ body, html {
   font-family: "Raleway", sans-serif;
 }
 
-/* Styles large picture at top of site */
-.header {
-    min-height: 100vh;
-    min-width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    opacity: 0.7;
-}
-
-/*--------------------------NAVIGATION BAR-----------------------------*/
+/*------------------------------------------NAVIGATION BAR--------------------------------------*/
 nav {
     display: flex;
     padding: 2% 6%;
@@ -59,7 +48,18 @@ nav img{
     width: 100%;
 }
 
-/*--------------------------HOME PAGE-----------------------------*/
+/*------------------------------------------HOME PAGE--------------------------------------*/
+/* Styles large picture at top of home page */
+.header {
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    opacity: 0.7;
+}
+/* Styles text on large picture */
 .text-box {
     width: 90%;
     color: #fff;
@@ -103,35 +103,6 @@ nav .fa {
     display: none;
 }
 
-.heal-txt-box {
-    width: 90%;
-    color: transparent;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-/* Styles athlete plan demo buttons */
-.heal-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #000000;
-    border: 1px solid #4F3ADB;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.heal-btn:hover {
-    border: 1px solid #4F3ADB;
-    background: #4F3ADB;
-    transition: 1s;
-    color: #fff;
-}
-
-
 /* Styles site for smaller devices like phones */
 @media(max-width: 700px) {
     .text-box h1 {
@@ -165,7 +136,7 @@ nav .fa {
     }
 }
 
-/* Content of home tab ---------------------- */
+/* Styles content of home tab */
 .home-content {
     width: 80%;
     margin: auto;
@@ -185,7 +156,7 @@ p {
     padding: 10px;
 }
 
-/* Join part of home tab ------------------ */
+/*-------------------------------------STYLES "JOIN" FOOTER--------------------------------------*/
 .join {
     margin: 100px auto;
     width: 80%;
@@ -209,7 +180,7 @@ p {
     }
 }
 
-/*--------------------------HEAL PAGE-----------------------------*/
+/*--------------------------------------HEAL PAGE--------------------------------------*/
 .sub-header {
     height: 50vh;
     width: 100%;
@@ -260,7 +231,35 @@ p {
     width: 50%;
 }
 
-/*--------------------------PRICING PAGE-----------------------------*/
+.heal-txt-box {
+    width: 90%;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Styles athlete plan demo buttons */
+.heal-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #4F3ADB;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.heal-btn:hover {
+    border: 1px solid #4F3ADB;
+    background: #4F3ADB;
+    transition: 1s;
+    color: #fff;
+}
+
+/*----------------------------------------PRICING PAGE--------------------------------------*/
 .price-header {
     height: 50vh;
     width: 100%;
@@ -278,7 +277,7 @@ p {
     margin-top: 200px;
 }
 
-/* Style page content */
+/* Styles pricing page content */
 .pricing {
     width: 80%;
     margin: auto;
@@ -295,7 +294,7 @@ p {
 .price-col img {
     width: 100%;
 }
-/* Layer above image when hovering */
+/* Creates layer above image when hovering */
 .layer {
     background: transparent;
     height: 100%;
@@ -328,7 +327,7 @@ p {
     font-size: 30px;
 }
 
-/*--------------------------FEEDBACK PAGE-----------------------------*/
+/*----------------------------------------FEEDBACK PAGE--------------------------------------*/
 .feedback-header {
     height: 50vh;
     width: 100%;
@@ -352,7 +351,7 @@ p {
     background: linear-gradient(#4C2F14, #F9BB80);
 }
 
-/* Styles Timer */
+/*----------------------------------------STYLES TIMER--------------------------------------*/
 #countdown
 {
 	
